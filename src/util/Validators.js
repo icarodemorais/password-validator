@@ -16,6 +16,7 @@ const atLeastOneOf = (characteres, password) => {
 
     return contains;
 }
+
 const allowDuplicateCharacter = (isAllowed, password) => {
 
     if (!isAllowed) {
@@ -30,10 +31,22 @@ const allowDuplicateCharacter = (isAllowed, password) => {
         return !isValid;
     }
 
+    return true;
+
+}
+
+const allowSpace = (isAllowed, password) => {
+    if (!isAllowed) {
+        let isValid = password.indexOf(' ') >= 0
+        return !isValid;
+    }
+    
+    return true;
 }
     
 module.exports = {
     minLength,
     atLeastOneOf,
-    allowDuplicateCharacter
+    allowDuplicateCharacter,
+    allowSpace
 }

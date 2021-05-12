@@ -7,7 +7,7 @@ service.validatePasswordItiRequirements = (password) => {
         minLength: 9,
         atLeastOneOf: "!@#$%^&*()-+",
         allowDuplicateCharacter: false,
-        // allowSpace: false,
+        allowSpace: false,
         // atLeastOne: ["number", "upperCase", "lowerCase"]
     });
 
