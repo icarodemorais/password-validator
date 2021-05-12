@@ -8,7 +8,10 @@ service.validatePasswordItiRequirements = (password) => {
         atLeastOneOf: "!@#$%^&*()-+",
         allowDuplicateCharacter: false,
         allowSpace: false,
-        // atLeastOne: ["number", "upperCase", "lowerCase"]
+        atLeastOneNumber: true,
+        atLeastOneUpperCase: true,
+        atLesatOneLowerCase: true
+
     });
 
     const validationResult = validator.validate(password);

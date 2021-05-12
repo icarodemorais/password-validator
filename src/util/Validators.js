@@ -43,10 +43,37 @@ const allowSpace = (isAllowed, password) => {
     
     return true;
 }
+
+const atLeastOneNumber = (isUsed, password) => {
+    if (isUsed) {
+        return atLeastOneOf("0123456789", password);
+    }
+    return true;
+}
+
+const atLeastOneUpperCase = (isUsed, password) => {
+    if (isUsed) {
+        //As variaveis comparadas são diferentes caso tenham uma letra maiuscula
+        let hasUpperCase = password == password.toLowerCase();
+        return !hasUpperCase;
+    }
+    return true;
+}
+
+const atLesatOneLowerCase = (isUsed, password) => {
+    if (isUsed) {
+        let regex = new RegExp("(?=.*[a-z])");
+        return regex.test(password);
+    }
+    return true;
+}
     
 module.exports = {
     minLength,
     atLeastOneOf,
     allowDuplicateCharacter,
-    allowSpace
+    allowSpace,
+    atLeastOneNumber,
+    atLeastOneUpperCase,
+    atLesatOneLowerCase
 }
