@@ -16,8 +16,24 @@ const atLeastOneOf = (characteres, password) => {
 
     return contains;
 }
+const allowDuplicateCharacter = (isAllowed, password) => {
+
+    if (!isAllowed) {
+        let passwordArray = password.split("");
+        let isValid = passwordArray.some(function(v,i,a){
+            return a.lastIndexOf(v) != i;
+            // v valor atual da iteração
+            // i index atual da iteração
+            // a array atual
+        });
+
+        return !isValid;
+    }
+
+}
     
 module.exports = {
     minLength,
-    atLeastOneOf
+    atLeastOneOf,
+    allowDuplicateCharacter
 }

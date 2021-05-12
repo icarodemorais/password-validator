@@ -6,7 +6,7 @@ service.validatePasswordItiRequirements = (password) => {
     const validator = passwordValidator.create({
         minLength: 9,
         atLeastOneOf: "!@#$%^&*()-+",
-        // allowDuplicateCharacter: false,
+        allowDuplicateCharacter: false,
         // allowSpace: false,
         // atLeastOne: ["number", "upperCase", "lowerCase"]
     });
