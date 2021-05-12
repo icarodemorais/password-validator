@@ -7,11 +7,16 @@ class PasswordValidator{
     }
 
     validate(password) {
-        let isValid = false;
+        let isValid = true;
 
         // .forEach é assíncrono, por isso o uso do for normal
+        /* todas precisam ter sido bem sucedidas para o retorn ser true, portanto, a validação é feita
+            onde o valor padrão é verdadeiro e é alterado somente caso uma seja falsa */
+        
         for (const e of Object.keys(this.validations)) {
-            isValid = validators[e](this.validations[e], password);
+            if (!validators[e](this.validations[e], password)) {
+                isValid = false;
+            }
         }
 
         return isValid;
