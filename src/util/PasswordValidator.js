@@ -1,4 +1,5 @@
 const validators = require('./validators');
+const invalidParameterError = require('../errors/invalidParameterError');
 
 class PasswordValidator{
 
@@ -45,7 +46,7 @@ create = (params) => {
             return new PasswordValidator(params);
         }
     }
-    throw 'Invalid parameters provided to passwordValidator'
+    throw new invalidParameterError('Invalid parameters provided to passwordValidator');
 }
 
-module.exports = { create };
+module.exports = { create, PasswordValidator };
