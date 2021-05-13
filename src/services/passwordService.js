@@ -1,4 +1,4 @@
-const passwordValidator = require('../util/PasswordValidator');
+const passwordValidator = require('../util/passwordValidator');
 const service = {};
 
 // Definição do metodo do service responsável por receber a senha,

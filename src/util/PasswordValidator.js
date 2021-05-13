@@ -1,4 +1,4 @@
-const validators = require('./Validators');
+const validators = require('./validators');
 
 class PasswordValidator{
 
