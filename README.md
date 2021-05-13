@@ -105,4 +105,4 @@ A princípio, o desafio parece ser simples, aplicar uma série de regras na vali
 
 A solução que propus segue implementações que fiz no passado para validações de formulários, e que julgo serem benéficas para a aplicação, sempre mantendo em mente a sua manutanção no futuro.
 
-Posso dizer que foi divertido propor e desenvolver essa solução, e independente do resultado, sou grato pela oportunidade.
+Foi divertido propor e desenvolver essa solução e como experiência foi bem interessante :D
