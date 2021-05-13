@@ -2,12 +2,7 @@
 
 ### Conteúdo
 
-- Como Rodar
-- Como Consumir
-- Descrição da Solução
-- Descrição do Projeto
-- Assunções
-- Conclusão
+[TOC]
 
 ### Como Rodar
 
@@ -90,7 +85,7 @@ Além disso, buscando definir uma única responsabilidade para cada arquivo ao m
 
 ![](https://i.postimg.cc/bYbkxdyz/folder-structure.png)
 
-###Assunções
+### Assunções
 
 Na descrição do desafio, alguns pontos não estavam claros e por conta disso foi necessário assumir alguns pontos para poder seguir com o desenvolvimento. As dúvidas e assunções foram:
 
