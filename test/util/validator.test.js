@@ -1,4 +1,4 @@
-const validator = require('../src/util/validators');
+const validator = require('../../src/util/validators');
 
 it('should test the minLength method', () => {
     expect(validator.minLength(5, '12345')).toBe(true);

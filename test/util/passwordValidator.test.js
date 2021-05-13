@@ -1,5 +1,5 @@
-const passwordValidator = require('../src/util/passwordValidator');
-const invalidParameterError = require('../src/errors/invalidParameterError');
+const passwordValidator = require('../../src/util/passwordValidator');
+const invalidParameterError = require('../../src/errors/invalidParameterError');
 
 it('should test the create method', () => {
 
