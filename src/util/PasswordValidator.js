@@ -45,7 +45,7 @@ create = (params) => {
             return new PasswordValidator(params);
         }
     }
-    throw "Invalid parameters provided to passwordValidator"
+    throw 'Invalid parameters provided to passwordValidator'
 }
 
 module.exports = { create };

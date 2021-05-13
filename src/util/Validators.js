@@ -55,7 +55,7 @@ const allowSpace = (isAllowed, password) => {
 // Caso seja obrigatório pelo menos um número, chama a função atLeastOneOf passando todos os digitos possíveis
 const atLeastOneNumber = (isUsed, password) => {
     if (isUsed) {
-        return atLeastOneOf("0123456789", password);
+        return atLeastOneOf('0123456789', password);
     }
     return true;
 }
@@ -76,7 +76,7 @@ const atLeastOneUpperCase = (isUsed, password) => {
 O motivo do uso de regex nesse caso foi o fato de ser uma validação onde a regex necessária é simples */
 const atLesatOneLowerCase = (isUsed, password) => {
     if (isUsed) {
-        let regex = new RegExp("(?=.*[a-z])");
+        let regex = new RegExp('(?=.*[a-z])');
         return regex.test(password);
     }
     return true;
