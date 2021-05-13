@@ -103,6 +103,4 @@ Na descrição do desafio, alguns pontos não estavam claros e por conta disso f
 
 A princípio, o desafio parece ser simples, aplicar uma série de regras na validação de uma string. Porém, ao analisar com mais calma os requisitos e pontos que serão avalidaos, definir uma solução que busca atender todos eles, ao mesmo tempo que sua implementação seja pertinente com o que foi solicitado, acaba se tornando uma tarefa um pouco não tão simples.
 
-A solução que propus segue implementações que fiz no passado para validações de formulários, e que julgo serem benéficas para a aplicação, sempre mantendo em mente a sua manutanção no futuro.
-
-Foi divertido propor e desenvolver essa solução e como experiência foi bem interessante :D
+A solução que propus segue implementações que fiz no passado para validações de formulários, e que julgo serem benéficas para a aplicação, sempre mantendo em mente a sua manutanção no futuro, e poder utilizar essa experiência nesse desafio foi bem interessante.
