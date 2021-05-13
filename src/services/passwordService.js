@@ -1,6 +1,9 @@
 const passwordValidator = require('../util/PasswordValidator');
 const service = {};
 
+// Definição do metodo do service responsável por receber a senha,
+// instânciar o password validator passando todas as validações necesárias e retornar o resultado da validação
+
 service.validatePasswordItiRequirements = (password) => {
 
     const validator = passwordValidator.create({

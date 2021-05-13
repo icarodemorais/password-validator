@@ -6,6 +6,7 @@ class PasswordValidator{
         this.validations = params; //validações que deve ser executadas
     }
 
+    // Metodo que executa os métodos correspondentes de acordo com os parâmetros passados
     validate(password) {
         let isValid = true;
 
@@ -16,6 +17,10 @@ class PasswordValidator{
         for (const e of Object.keys(this.validations)) {
             if (!validators[e](this.validations[e], password)) {
                 isValid = false;
+                break;
+                /* como é necessário somente uma validação retornar false para a senha ser invalida
+                e nesse caso não existe a necessidade de detalhamento de quais requisitos a senha não cumpriu
+                é forçada a saída do loop, sem existir a necessidade de continuar as outras validações  */
             }
         }
 
@@ -26,12 +31,13 @@ class PasswordValidator{
 
 //factory
 create = (params) => {
-    /*validar se é um objeto
-        true: 
-            validar se todas as propriedades, são validas
-                true: retorna uma instância parametrizada
-                false: retorna erro de chamada
-        false: retorna erro de chamada */
+    /*
+        Método exposto pelo arquivo responsável pela validação dos parâmetros passados
+        e pelo retorno de uma instância do tipo PasswordValidator
+
+        Chamado dessa forma protegendo o construtor seguindo o factory para possíveis alterações
+        sem impactar as integrações
+    */
     if (params) {
         //valida se todas as chaves existentes no objeto passado, são aceitas
         let allValidKeys = Object.keys(params).every(e => Object.keys(validators).includes(e));

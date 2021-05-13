@@ -7,3 +7,19 @@ const app = require('./src/app');
 app.listen(8080, function () {
     console.log(`Iti Password Test listening on port 8080`)
 })
+
+/*
+
+@TO-DO:
+
+-Padronização de código
+    -Comentarios
+    -Identação
+    -Aspas simples e duplas
+    -Tipos de variáveis
+    -Nomes de variaveis
+-Testes unitários
+-Readme
+-Deploy do código na aws
+
+*/
