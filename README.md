@@ -2,7 +2,12 @@
 
 ### Conteúdo
 
-[TOC]
+- [Como Rodar](https://github.com/icarodemorais/password-validator/blob/master/README.md#como-rodar)
+- [Como Consumir](https://github.com/icarodemorais/password-validator/blob/master/README.md#como-consumir-a-api)
+- [Descrição da Solução](https://github.com/icarodemorais/password-validator/blob/master/README.md#solu%C3%A7%C3%A3o)
+- [Descrição do Projeto](https://github.com/icarodemorais/password-validator/blob/master/README.md#projeto)
+- [Assunções](https://github.com/icarodemorais/password-validator/blob/master/README.md#assun%C3%A7%C3%B5es)
+- [Conclusão](https://github.com/icarodemorais/password-validator/blob/master/README.md#conclus%C3%A3o)
 
 ### Como Rodar
 
